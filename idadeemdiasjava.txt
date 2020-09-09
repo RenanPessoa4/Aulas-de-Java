@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Exerc03 {
+    public static void main(String[] args) {
+        
+        //Declaração de variaveis
+        Scanner entrada;
+        int data;
+        int ano;
+        int meses;
+        int dias;
+        int idade;
+       
+       
+        entrada = new Scanner(System.in);
+       
+        //Entrada de dados
+        System.out.println("Informe o ano da data de hoje:(ex. 2015):"
+        data = entrada.nextInt();
+        System.out.println("Informe sua idade(ano/mes/dias):");
+        ano = entrada.nextInt();
+        meses = entrada.nextInt();
+        dias = entrada.nextInt();
+       
+        idade = ((data-ano) * 365) + (meses * 30) + dias; //Processamento
+               
+        System.out.println("O resultado da expressão eh " + idade); //Saida
+    }
+}

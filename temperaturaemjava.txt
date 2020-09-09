@@ -1,0 +1,32 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Celsius {
+	public static void main(String[] args) {
+		/*
+		programa
+		{
+			
+			funcao inicio()
+			{
+				real tempF, tempC
+				escreva("Temperatura em Fahrenheit: ")
+				leia(tempF)
+				tempC=(tempF - 32)/1.8
+				escreva("Temperatura em graus Celsius: ", tempC)
+			}
+		}
+		*/
+		Locale.setDefault(Locale.US); // roda primeiro - ajusta para o padroa americano
+		//criar - instanciar o teclado
+		Scanner kb = new Scanner(System.in);
+		
+		double tempF, tempC;
+		
+		System.out.print("Temperatura em Fahrenheit: ");
+		tempF = kb.nextDouble();
+		tempC = (tempF - 32)/1.8;
+		System.out.printf("Temperatura em graus Celsius: %.2f ", tempC);
+				
+		kb.close();
+	}
+}
