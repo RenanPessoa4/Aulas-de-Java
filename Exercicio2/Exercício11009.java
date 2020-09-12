@@ -6,7 +6,7 @@ public class Exercício11009 {
 	import java.util.*;
 
 	public class ExercicioJava1 {
-
+ 
 	    public static void main(String[] args) {
 
 	      Locale.setDefault(Locale.US);
