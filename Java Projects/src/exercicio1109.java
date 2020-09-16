@@ -17,9 +17,7 @@ public class exercicio1109 {
 	System.out.printf("\n");
 	
 	for (i=0; i<vetor.length; i++) {
-		
-		if vetor[i]%2 == 0 && vetor[i]!=0 
-				{
+		if(vetor[i]%2==0) {
 			
 			contpar++;
 			somapar+=vetor[i];
